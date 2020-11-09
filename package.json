@@ -1,14 +1,18 @@
 {
   "name": "adopt-me",
   "version": "1.0.0",
+  "homepage": "hhtps://pa7wel.github.io/adopt-me",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clear-build-cache": "rm -rf .casche/ dist/",
     "dev": "parcel src/index.html",
     "dev:mock": "cross-env PET_MOCK=mock npm run dev",
     "format": "prettier \"src/**/*.{js,html}\"  --write",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "keywords": [],
   "author": "",
@@ -32,6 +36,7 @@
   },
   "dependencies": {
     "@reach/router": "^1.3.4",
+    "gh-pages": "^3.1.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
   },
