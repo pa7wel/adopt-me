@@ -8,7 +8,7 @@ interface IProps {
     breed: string;
     media: Photo[];
     location: string;
-    id: string;
+    id: number;
 }
 
 const Pet: FunctionComponent<IProps> = (props) => {
