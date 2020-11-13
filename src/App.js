@@ -2,7 +2,7 @@ import React, { useState, lazy, Suspense } from "react";
 import ReactDOM from "react-dom";
 import { Router } from "@reach/router";
 import SearchParams from "./SearchParams";
-import ThemeContext from "./ThemeContext";
+import ThemeContext from "./ThemeContext.tsx";
 import NavBar from "./NavBar";
 
 const Details = lazy(() => import("./Details"));
